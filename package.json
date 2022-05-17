@@ -1,0 +1,15 @@
+{
+  "name": "Lowest Common Ancestor",
+  "version": "1.0.0",
+  "description": "Lowest Common Ancestor",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "Zafer Tan Cankiri",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16"
+  }
+}

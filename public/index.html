@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreamlines Directory Task</title>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/axios.min.js"></script>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="js/bootstrap.min.js"></script>
+
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="row mt-1 w-80">
+                <h4>Dreamlines Directory Tester</h4>
+                <p>This is a single page application that is used to test the feature of finding common closest common managers in a
+                    company directory. <br /> Usage: First you need to create the people in the directory one by one. Then, you need to
+                    build the directory, which is sending the hierarchy to the server. Then, you can start to use feature. </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Personal File Creation</h2>
+                <div class="row mt-1 w-50">
+                    <input type="text" id="input-name" placeholder="Name"/>
+                </div>
+                <div class="row mt-1 w-50">
+                    <input type="text" id="input-title" placeholder="Title"/>
+                </div>
+                <div class="row mt-1 w-50">
+                    <input type="number" id="input-manager" placeholder="Manager ID" disabled/>
+                </div>
+                <div class="row mt-1 w-50">
+                    <button id="btn-add" class="btn btn-primary w-100">Add Person</button>
+                </div>
+                <h2>Build Directory</h2>
+                <div class="row mt-1 w-50">
+                    <button id="btn-build" class="btn btn-primary w-100">Build</button>
+                </div>
+                <h2>Common Closest Manager</h2>
+                <div class="row mt-1 w-50">
+                    <input type="text" id="input-personal-1" placeholder="Personal-1 ID" />
+                </div>
+                <div class="row mt-1 w-50">
+                    <input type="text" id="input-personal-2" placeholder="Personal-2 ID" />
+                </div>
+                <div class="row mt-1 w-50">
+                    <button id="btn-find" class="btn btn-primary w-100">Find</button>
+                </div>
+                <div class="row mt-1 w-75">
+                    <p id="result"></p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2>Personal Directory</h2>
+                <ul id="directory" class="tree">
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer font-small blue">
+        <div class="footer-copyright text-center py-3">Developer: Zafer Tan Cankiri,
+            <a href="mailto:ztan.cankiri@gmail.com">ztan.cankiri@gmail.com</a>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
